@@ -39,7 +39,7 @@ sudo chmod a+w /etc/nomad.d
 
 # Nomad config file copy
 sudo mkdir -p /tmp/nomad
-sudo curl https://raw.githubusercontent.com/vladchu/cluster/main/server-nomad.hcl -o /tmp/nomad/server.hcl
+sudo curl https://raw.githubusercontent.com/devops-kyrrex-com/vault-hashistack/main/conf/nomad/server.hcl -o /tmp/nomad/server.hcl
 sudo cp /tmp/nomad/server.hcl /etc/nomad.d/server.hcl
 
 # Install Consul
@@ -60,7 +60,7 @@ sudo chmod a+w /etc/consul.d
 
 # Consul config file copy
 sudo mkdir -p /tmp/consul
-sudo curl https://raw.githubusercontent.com/vladchu/cluster/main/server.hcl -o /tmp/consul/server.hcl
+sudo curl https://raw.githubusercontent.com/devops-kyrrex-com/vault-hashistack/main/conf/consul/server.hcl -o /tmp/consul/server.hcl
 sudo cp /tmp/consul/server.hcl /etc/consul.d/server.hcl
 
 for bin in cfssl cfssl-certinfo cfssljson
@@ -147,7 +147,7 @@ sudo chmod a+w /etc/vault.d
 
 # Vault config file copy
 sudo mkdir -p /tmp/vault
-sudo curl https://raw.githubusercontent.com/vladchu/cluster/main/server-vault.hcl -o /tmp/vault/server.hcl
+sudo curl https://raw.githubusercontent.com/devops-kyrrex-com/vault-hashistack/main/conf/vault/server.hcl -o /tmp/vault/server.hcl
 sudo cp /tmp/vault/server.hcl /etc/vault.d/server.hcl
 
 # Form Vault Cluster
